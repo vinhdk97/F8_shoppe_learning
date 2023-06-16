@@ -17,6 +17,7 @@
 .navbar-item{
     margin: 0 8px;
     position: relative;
+    min-height: 26px;
 }
 
 .navbar-item-link,
@@ -28,10 +29,23 @@
     font-weight: 300;
 }
 
+.navbar-icon,
+.navbar-item-link,
+.navbar-item{
+    display: inline-flex;
+    align-items: center;
+}
+
+
 .navbar-item-link:hover,
 .navbar-item:hover{
     color:rgba(255, 255, 255, .7);
     cursor: pointer;
+}
+
+.navbar-item--text{
+    cursor: text;
+    color: var(--white-color);
 }
 
 .bold{
@@ -50,6 +64,11 @@
 }
 
 .navbar-icon{
+    font-size: 1.8rem;
+    margin: 0 4px;
+}
+
+.navbar-icon-link{
     color: var(--white-color);
     text-decoration: none;
 }
