@@ -119,3 +119,51 @@
     height: 40px;
 }
 
+/* Notification */
+.notify{
+    position: absolute;
+    top: 118%;
+    width: 404px;
+    border: 1px solid #d3d3d3;
+    background-color: var(--white-color);
+}
+
+.notify-header{ 
+    height: 40px;
+    background-color: var(--white-color);
+}
+
+.notify-header h3{
+    color: #999;
+    font-size: 1.6rem;
+    margin: 0 0 0 12px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.notify-list{
+    padding-left: 0;
+}
+.notify-item{
+    display: flex;
+}
+.notify-item-link{
+    display: flex;
+}
+
+.item-img{
+    width: 48px;
+    /* 18:14 */
+}
+
+.item-info{
+
+}
+
+.item-name{
+
+}
+
+.item-desc{
+
+}
