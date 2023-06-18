@@ -133,6 +133,28 @@
     display: none;
 }
 
+/* Triangle Up*/
+.notify::before{
+    content: "";
+    border-width: 20px 26px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 0px;
+    top: -30px;
+}
+
+/*  */
+.notify::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 90px;
+    right: 0;
+    height: 20px;
+    top: -16px;
+}
+
 @keyframes notifyAnimation {
     from {
         opacity: 0;
