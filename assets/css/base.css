@@ -63,12 +63,28 @@ html{
 /* Button */
 .btn{
     min-width: 142px;
-    height: 36px;
+    height: 34px;
     text-transform: uppercase;
     border: none;
     border-radius: 2px;
     font-size: 1.5rem;
-    padding: 0;
+    padding: 0 1px;
+    outline: none;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btn-normal:hover{
+    background-color:rgba(0, 0, 0, 0.05);
+}
+
+.btn.btn--s-s{
+    height: 32px;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 
 .btn.btn-primary{
@@ -76,6 +92,10 @@ html{
     color: var(--white-color);
 }
 
+.btn.btn-disabled{
+    color: #949494;
+    background-color: #c3c3c3;
+}
 /* Animation */
 @keyframes fadeIn{
     from{

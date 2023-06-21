@@ -249,6 +249,9 @@
 /* modal */
 .auth-form{
     width: 500px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: var(--white-color);
 }
 
 .form-container{
@@ -311,4 +314,42 @@
 
 .form-controls{
     margin-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-controls-back{
+    margin-right: 8px;
+}
+
+.social-login{
+    background-color: #f5f5f5;
+    margin-top: 24px;
+    padding: 12px 36px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-icon{
+    font-size: 1.8rem;
+}
+
+.btn-facebook{
+    color: var(--white-color);
+    background-color: #3a5a98;
+}
+
+.btn-google{
+    color: #666;
+    background-color: var(--white-color);
+}
+
+.btn-facebook
+.form-icon{
+    color: var(--white-color);
+
+}
+
+.social-login-title{
+    margin: 0 36px;
 }
