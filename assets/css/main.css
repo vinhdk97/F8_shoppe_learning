@@ -265,6 +265,7 @@
 }
 
 .form-heading{
+    padding: 0 12px;
     font-size: 2.2rem;
     font-weight: 400;
     color: var(--text-color);
