@@ -63,8 +63,8 @@ html{
 /* Button */
 .btn{
     min-width: 142px;
+    line-height: 1.9rem;
     height: 34px;
-    text-transform: uppercase;
     border: none;
     border-radius: 2px;
     font-size: 1.5rem;
@@ -103,4 +103,13 @@ html{
     }to{
         opacity: 1;
     }
+}
+
+/* text */
+.t-uppercase{
+    text-transform: uppercase;
+}
+
+.t-primary{
+    color:var(--primary-color)
 }

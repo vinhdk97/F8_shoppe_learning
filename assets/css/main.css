@@ -332,6 +332,7 @@
 
 .form-icon{
     font-size: 1.8rem;
+    padding: 0 12px;
 }
 
 .btn-facebook{
@@ -351,5 +352,24 @@
 }
 
 .social-login-title{
-    margin: 0 36px;
+    margin: 0 16px;
+    font-size: 1.2rem;
 }
+/* login modal */
+.form-help{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.help-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.seperate-block{
+    display: block;
+    margin: 0 16px;
+    height: 16px;
+    border-left: 1px solid var(--border-color);
+}
+
