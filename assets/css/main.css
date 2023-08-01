@@ -10,15 +10,21 @@
 
 .navbar-list{
     list-style: none;
+    /* display: flex; */
     padding-left: 0;
     margin: 4px 0 0 0;
 }
 
 .navbar-item{
+   
     margin: 0 8px;
     position: relative;
     min-height: 26px;
 }
+
+
+
+
 
 .navbar-item-link,
 .navbar-item{
@@ -32,7 +38,7 @@
 .navbar-icon,
 .navbar-item-link,
 .navbar-item{
-    display: inline-flex;
+    /* display: inline-flex; */
     align-items: center;
 }
 
@@ -119,6 +125,82 @@
     height: 40px;
 }
 
+
+/* User login */
+.user-login{
+    
+    position: relative;
+}
+
+.user-avatar{
+   
+    font-size: 22px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+.user-name{
+    font-size: 1.4rem;
+    margin-left: 8px;
+    font-weight: 400;
+}
+
+
+.user-login:hover
+.user-menu{
+    display: block;
+}
+
+.user-menu{
+    position: absolute;
+    padding-left: 0;
+    top: calc(100% + 4px);
+    right: 0;
+    background-color: var(--white-color);
+    width: 160px;
+    list-style: none;
+    border-radius: 2px;
+    display: none;
+    margin: 0;
+    z-index: 1;
+    box-shadow: 0 1px 5px rgb(189, 189, 189);
+
+}
+
+.user-menu-item{
+    
+}
+
+.user-menu-item a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding: 4px 16px;
+    display: block;
+
+}
+
+.user-menu-item a:first-child{
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+}
+.user-menu-item a:last-child{
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.user-menu-item a:hover{
+    background-color: #fafafa;
+}
+
+.user-menu::before{
+    content: "";
+    border-width: 18px 20px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 0px;
+    top: -25px;
+}
 /* Notification */
 .notify{
     position: absolute;
@@ -406,6 +488,11 @@
     text-align: center;
 }
 
+.cart:focus
+.cart-list{
+    display: block;
+}
+
 /* Cart drop down */
 
 .cart-wrap{
@@ -435,7 +522,7 @@
 .cart-list{
     cursor: default;
     position: absolute;
-    /* display: none; */
+    display: none;
     top: calc(100% + 6px);
     right: -8px;
     background-color: var(--white-color);
@@ -577,6 +664,7 @@
 
 .item-cart-view:hover{
     background-color: #f05d41;
+    cursor: pointer;
 }
 
 .search-input-wrap{
